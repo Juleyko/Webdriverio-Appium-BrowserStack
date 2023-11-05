@@ -19,7 +19,6 @@ class Event extends Page {
       "//android.widget.FrameLayout[@resource-id='com.samsung.android.calendar:id/swipe_touch_layout']"
     );
   }
-
   public async clickOnEvent4thDay() {
     await this.event4thDay.click();
   }
