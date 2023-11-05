@@ -20,6 +20,7 @@ describe("My calendar application", () => {
     const selector = await main.getResourceIdSelector(addEventFiedResourceld);
     expect(await main.isAddEventFieldDisplayed(selector)).toBe(true);
   });
+
   it(" [case 2]should be visible month", async () => {
     // await browser.pause(7000);
     const selector = await main.getResourceIdSelector(monthString);
@@ -36,6 +37,7 @@ describe("My calendar application", () => {
     const selector = await main.getResourceIdSelector(serchIcon);
     expect(await main.isAddEventFieldDisplayed(selector)).toBe(true);
   });
+
   it(" [case 5]should add event", async () => {
     await browser.pause(5000);
     // await main.clickOnAddEventButton();
