@@ -1,4 +1,0 @@
-{
-  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test:  [case 2]should be visible month\",\"level\":\"info\"}}",
-  "args": []
-}
