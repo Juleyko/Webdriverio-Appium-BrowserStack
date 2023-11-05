@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//android.widget.TextView[@resource-id=\"com.samsung.android.calendar:id/navigation_bar_item_small_label_view\" and @text=\"Save\"]"
-}
