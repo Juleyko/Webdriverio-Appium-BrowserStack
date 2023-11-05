@@ -13,7 +13,6 @@
     "allure": "npx allure serve ./reporters/allure-results",
     "allure-view-report": "npx allure open allure-report",
     "allure-generate": "allure generate ./reporters/allure-results --clean"
-    
   },
   "devDependencies": {
     "@wdio/allure-reporter": "^8.14.0",
