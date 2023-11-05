@@ -65,6 +65,7 @@ typings/
 
 # auto generated files from reporters such as Allure or Junit
 reporters/*
+allure-report
 
 apps
 ChromeDriver.txt
