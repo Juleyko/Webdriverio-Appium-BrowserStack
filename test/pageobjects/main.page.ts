@@ -51,8 +51,7 @@ class Main extends Page {
   }
 
   public async clickElement(element: string): Promise<void> {
-    await browser.pause(5000);
-    // await this.waitUntilElementDisplayed(element);
+    await this.waitUntilElementDisplayed(element);
     const elem = await this.getElement(element);
     await elem.click();
   }
@@ -61,8 +60,7 @@ class Main extends Page {
     element: string,
     value: string
   ): Promise<void> {
-    await browser.pause(5000);
-    // await this.waitUntilElementDisplayed(element);
+    await this.waitUntilElementDisplayed(element);
     const elem = await this.getElement(element);
     await elem.setValue(value);
   }
