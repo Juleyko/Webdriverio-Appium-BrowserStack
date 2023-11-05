@@ -30,7 +30,7 @@ jobs:
         if: always()
         with:
           name: browserstack-test-results
-          path: test-results/
+          path: reporters/allure-results
       - uses: actions/upload-artifact@v2
         if: always()
         with:
