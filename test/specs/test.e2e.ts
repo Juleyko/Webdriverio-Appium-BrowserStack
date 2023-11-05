@@ -5,8 +5,7 @@ import event from "../pageobjects/event.page.js";
 const addEventFiedResourceld =
   "com.samsung.android.calendar:id/quick_add_button";
 const addEventButton = "com.samsung.android.calendar:id/floating_action_button";
-const saveButton =
-  "com.samsung.android.calendar:id/navigation_bar_item_small_label_view";
+const saveButton = `//android.widget.TextView[@resource-id="com.samsung.android.calendar:id/navigation_bar_item_small_label_view" and @text="Save"]`;
 const titleEventName = "com.samsung.android.calendar:id/title";
 const monthString = "com.samsung.android.calendar:id/date_header";
 const menuButton = "com.samsung.android.calendar:id/open_drawer";
@@ -49,8 +48,8 @@ describe("My calendar application", () => {
     await main.setElementInputValue(select, "Win");
     await browser.pause(5000);
     // await main.clickOnSaveEventButton();
-    const selec = await main.getResourceIdSelector(saveButton);
-    await main.clickElement(selec);
+    // const selec = await main.getResourceIdSelector(saveButton);
+    await main.clickElement(saveButton);
     await browser.pause(5000);
   });
 
