@@ -65,7 +65,7 @@ class Main extends Page {
     await elem.setValue(value);
   }
 
-  public async getResourceIdSelector(resourceId) {
+  public async getResourceIdSelector(resourceId: string) {
     const selector = `android=new UiSelector().resourceId("${resourceId}")`;
     return selector;
   }

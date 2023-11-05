@@ -12,6 +12,8 @@ export const config = {
       "bstack:options": {
         deviceName: "Samsung Galaxy M52",
         osVersion: "11.0",
+        platformName: "Android",
+        platformVersion: "11.0",
         deviceOrientation: "portrait",
       },
     },
