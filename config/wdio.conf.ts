@@ -144,13 +144,13 @@ export const config = {
   // see also: https://webdriver.io/docs/dot-reporter
   reporters: [
     "spec", // https://webdriver.io/docs/spec-reporter.html
-    [
-      "junit",
-      {
-        outputDir: "./reporters/junit-results", // https://webdriver.io/docs/junit-reporter.html
-      },
-    ],
-    // ['allure', {outputDir: './reporters/allure-results'}]
+    // [
+    //   "junit",
+    //   {
+    //     outputDir: "./reporters/junit-results", // https://webdriver.io/docs/junit-reporter.html
+    //   },
+    // ],
+    ["allure", { outputDir: "./reporters/allure-results" }],
   ],
 
   //
