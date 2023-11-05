@@ -8,10 +8,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: "BrowserStack Env Setup"
+        uses: "browserstack/github-actions/setup-env@master"
         with:
-          node-version: "18.x"
+          username: ${{ secrets.BROWSERSTACK_USERNAME }}
+          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+          build-name: BUILD_INFO
+          project-name: REPO_NAME
+      - name: "BrowserStackLocal Setup"
+        uses: "browserstack/github-actions/setup-local@master"
+        with:
+          local-testing: start
+          local-identifier: random
 
       - name: Install dependencies
         run: npm install
@@ -22,3 +30,8 @@ jobs:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           BROWSERSTACK_ANDROID_APP_ID: ${{ secrets.BROWSERSTACK_ANDROID_APP_ID }}
+
+      - name: "BrowserStackLocal Stop"
+        uses: "browserstack/github-actions/setup-local@master"
+        with:
+          local-testing: stop
