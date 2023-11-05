@@ -23,6 +23,15 @@ jobs:
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
           BROWSERSTACK_ANDROID_APP_ID: ${{ secrets.BROWSERSTACK_ANDROID_APP_ID }}
 
+      - name: Generate Allure Report
+        if: always()
+        run: npm run allure-generate
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: allure-test-results
+          path: allure-report
+
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()

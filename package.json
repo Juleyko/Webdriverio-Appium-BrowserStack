@@ -5,6 +5,16 @@
   "engines": {
     "node": "^16.17.0 || >=18.0.0"
   },
+  "scripts": {
+    "test:android:bs": "wdio run ./config/wdio.conf.android.bs.ts",
+    "test:android": "wdio run ./config/wdio.conf.android.ts",
+    "test:ios": "wdio run ./config/wdio.conf.ios.ts",
+    "test:ios:bs": "wdio run ./config/wdio.conf.ios.bs.ts",
+    "allure": "npx allure serve ./reporters/allure-results",
+    "allure-view-report": "npx allure open allure-report",
+    "allure-generate": "allure generate ./reporters/allure-results --clean"
+    
+  },
   "devDependencies": {
     "@wdio/allure-reporter": "^8.14.0",
     "@wdio/appium-service": "^8.14.3",
@@ -22,14 +32,6 @@
     "typescript": "^5.0.0",
     "wdio-wait-for": "^3.0.6"
 
-  },
-  "scripts": {
-    "test:android:bs": "wdio run ./config/wdio.conf.android.bs.ts",
-    "test:android": "wdio run ./config/wdio.conf.android.ts",
-    "test:ios": "wdio run ./config/wdio.conf.ios.ts",
-    "test:ios:bs": "wdio run ./config/wdio.conf.ios.bs.ts",
-    "allure": "npx allure serve ./reporters/allure-results",
-    "allure-generate": "allure generate allure-results -o allure-report --clean"
   },
   "dependencies": {
     "@wdio/spec-reporter": "^8.15.0",

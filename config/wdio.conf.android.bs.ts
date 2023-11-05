@@ -2,11 +2,6 @@ import { config as sharedConfig } from "./wdio.conf.js";
 import dotenv from "dotenv";
 dotenv.config(); // Load environment variables from .env file
 
-console.log("<========== START ============>");
-console.log(process.env.BROWSERSTACK_USERNAME);
-console.log(process.env.BROWSERSTACK_ACCESS_KEY);
-console.log("<========== END ============>");
-
 export const config = {
   ...sharedConfig,
   user: process.env.BROWSERSTACK_USERNAME,
