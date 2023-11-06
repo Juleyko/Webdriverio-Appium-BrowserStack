@@ -1,0 +1,4 @@
+{
+  "using": "-android uiautomator",
+  "value": "new UiSelector().resourceId(\"com.samsung.android.calendar:id/quick_add_button\")"
+}

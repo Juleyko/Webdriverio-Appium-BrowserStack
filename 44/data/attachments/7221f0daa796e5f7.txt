@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test:  [case 4]should be visible serch icon\",\"level\":\"info\"}}",
+  "args": []
+}
