@@ -27,14 +27,5 @@ class Main extends Page {
     const selector = `android=new UiSelector().resourceId("${resourceId}")`;
     return selector;
   }
-
-  // public async waitUntilSignUpDisplayed(btnIos: string): Promise<void> {
-  //     browser.isAndroid ? await this.waitUntilElementDisplayed(signUpBtn) :
-  //     await this.waitUntilElementDisplayed(btnIos);
-  //   }
-  //   public async isElementDisplayed(element: string): Promise<boolean> {
-  //     const elem = await this.getElement(element);
-  //     return elem.isDisplayed()
-  //   }
 }
 export default new Main();
