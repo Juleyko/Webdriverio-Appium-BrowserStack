@@ -1,48 +1,6 @@
 import { browser } from "@wdio/globals";
 import Page from "./page.js";
-
-const addEventFiedResourceld =
-  "com.samsung.android.calendar:id/quick_add_button";
-const titleEventName = "com.samsung.android.calendar:id/title";
-
 class Main extends Page {
-  get turnOnButton() {
-    return $(
-      "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[2]"
-    );
-  }
-  get addEventButton() {
-    return $("//android.widget.ImageButton[@content-desc='Додати подію']");
-  }
-  get eventFieldName() {
-    return $(
-      "//android.widget.AutoCompleteTextView[@resource-id='com.samsung.android.calendar:id/title']"
-    );
-  }
-  get saveEventButton() {
-    return $("~Зберегти");
-  }
-  get eventDay() {
-    return $("//android.view.View[@content-desc=' ' and @text='2023-11-4']");
-  }
-
-  public async clickOnTurnOnButton() {
-    (await this.turnOnButton).click();
-  }
-  public async clickOnEventDay() {
-    await this.eventDay.click();
-  }
-
-  public async clickOnAddEventButton() {
-    await this.addEventButton.click();
-  }
-  public async fillEventFieldName() {
-    (await this.eventFieldName).setValue("Win");
-  }
-  public async clickOnSaveEventButton() {
-    await this.saveEventButton.click();
-  }
-
   public async isAddEventFieldDisplayed(
     addEventFiedResourceld: string
   ): Promise<boolean> {

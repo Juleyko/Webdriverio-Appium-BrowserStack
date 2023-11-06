@@ -11,10 +11,8 @@ const menuButton = "com.samsung.android.calendar:id/open_drawer";
 const serchIcon = "com.samsung.android.calendar:id/search_icon";
 
 describe("My calendar application", () => {
-  it(" [case 1]should be visible element add Event", async () => {
+  it(" [case 1]should be visible element Add Event", async () => {
     await browser.pause(7000);
-    // await main.clickOnTurnOnButton();
-    await browser.pause(5000);
     const selector = await main.getResourceIdSelector(addEventFiedResourceld);
     expect(await main.isAddEventFieldDisplayed(selector)).toBe(true);
   });
