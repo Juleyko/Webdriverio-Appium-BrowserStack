@@ -1,0 +1,4 @@
+{
+  "script": "browserstack_executor: {\"action\":\"annotate\",\"arguments\":{\"data\":\"Test:  [case 5]should add event\",\"level\":\"info\"}}",
+  "args": []
+}

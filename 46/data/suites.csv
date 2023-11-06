@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Nov 06 00:25:58 GMT 2023","Mon Nov 06 00:26:04 GMT 2023","5649","","My calendar application","","",""," [case 3]should be visible menu",""
+"passed","Mon Nov 06 00:26:04 GMT 2023","Mon Nov 06 00:26:05 GMT 2023","609","","My calendar application","","",""," [case 4]should be visible serch icon",""
+"passed","Mon Nov 06 00:26:05 GMT 2023","Mon Nov 06 00:26:19 GMT 2023","14231","","My calendar application","","",""," [case 5]should add event",""
+"passed","Mon Nov 06 00:25:58 GMT 2023","Mon Nov 06 00:25:58 GMT 2023","772","","My calendar application","","",""," [case 2]should be visible month",""
+"passed","Mon Nov 06 00:25:50 GMT 2023","Mon Nov 06 00:25:58 GMT 2023","8118","","My calendar application","","",""," [case 1]should be visible element Add Event",""
